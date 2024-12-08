@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PanBankApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">#F5F5F5</item>
-        <item name="colorSecondary">#F5F5F5</item>
+        <item name="colorPrimary">@color/backgroundApp</item>
+        <item name="colorSecondary">@color/black</item>
 
     </style>
 
