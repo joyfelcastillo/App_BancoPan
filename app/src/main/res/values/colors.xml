@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="background">#F5F5F5</color>
+    <color name="backgroundApp">#F5F5F5</color>
     <color name="gray_light">#E0E0E0</color>
     <color name="car_background">#F3F4F6</color>
 
@@ -13,4 +13,14 @@
 
 
     <color name="fdf">#009ee6</color>
+
+
+
+
+        <color name="colorPrimary">#00A0E3</color>
+
+        <color name="textColor">#5C5C5C</color>
+        <color name="buttonColor">#F3A847</color>
+
+
 </resources>

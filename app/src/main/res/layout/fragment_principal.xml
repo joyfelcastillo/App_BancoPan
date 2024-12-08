@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
@@ -63,7 +63,7 @@
 
             <TextView
                 android:id="@+id/current_balance_label"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
                 android:text="Saldo atual"
@@ -85,7 +85,7 @@
 
         <!-- Opciones de acción -->
         <GridLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:columnCount="2"
@@ -217,7 +217,7 @@
                         android:layout_height="wrap_content"
                         android:text="    Eprestimos    "
                         android:textSize="16sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/gray_light"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -229,7 +229,7 @@
         <!-- Información adicional -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSaude"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:cardBackgroundColor="#5E626B"
@@ -242,7 +242,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
                     android:layout_weight="1"
@@ -253,7 +253,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:text="Saúde de qualidade "
-                        android:textColor="@color/white"
+                        android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -262,7 +262,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:text="pagando apenas R$ "
-                        android:textColor="@color/white"
+                        android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -271,7 +271,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:text="8,99 por mês."
-                        android:textColor="@color/white"
+                        android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -313,7 +313,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardCartao"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
@@ -332,7 +332,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cartão"
-                        android:textColor="@color/white"
+                        android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -341,20 +341,20 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:text="Peça um"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/gray_light" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="cartão agora"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/gray_light" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/gridEm"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:cardBackgroundColor="#F3F4F6"

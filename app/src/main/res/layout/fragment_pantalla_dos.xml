@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/backgroundApp"
     android:padding="20dp">
 
     <LinearLayout
@@ -15,35 +15,35 @@
         <!-- Balance Information -->
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="225dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="50dp"
             android:src="@drawable/converted_image" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="30dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="50dp"
             android:text="Você ainda"
-            android:textColor="@color/black"
+            android:textColor="@color/gris_texto"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
+            android:paddingStart="16dp"
             android:layout_marginBottom="4dp"
             android:text="pode gastar:"
-            android:textColor="@color/black"
+            android:textColor="@color/gris_texto"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
+            android:paddingStart="16dp"
             android:layout_marginBottom="20dp"
             android:text="R$ 1.245,00"
             android:textColor="#00A7E1"
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:layout_marginStart="40dp"
+          android:paddingStart="16dp"
             android:text="Sua fatura atual está em:"
             android:textColor="#707070"
             android:textSize="14sp" />
@@ -64,18 +64,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:layout_marginStart="40dp"
+            android:paddingStart="16dp"
             android:text="R$ 755,00"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/gris_texto"
             android:textSize="18sp" />
 
+        <!-- Navigation Tabs -->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/_pojv71qj9c1vdciqtdutl6tcsc" />
+            android:paddingStart="16dp"
+            android:src="@drawable/ic_barra" />
 
-        <!-- Navigation Tabs -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:text="Conta"
-                android:backgroundTint="#F3F4F6"
+                android:backgroundTint="@color/car_background"
                 android:textColor="#707070"
                 android:textSize="16sp" />
 
@@ -100,14 +101,14 @@
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="#757575"
                 android:text="Cartões"
-                android:textColor="#000000"
+                android:textColor="@color/gray_light"
                 android:textSize="16sp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empréstimo"
-                android:backgroundTint="#F3F4F6"
+                android:backgroundTint="@color/car_background"
                 android:textColor="#707070"
                 android:textSize="16sp" />
         </LinearLayout>
