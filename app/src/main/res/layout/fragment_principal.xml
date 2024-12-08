@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounded_background"
+    android:background="@color/backgroundApp"
     android:padding="20dp"
     tools:context=".MainActivity">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,28 +16,34 @@
         android:padding="16dp"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/inicio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/gris_texto"
-            android:text="11:39"/>
+            android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src=""
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="11:49"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_senal"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_wifi"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bateria"/>
 
 
-    </LinearLayout>
-
+        </LinearLayout>
 
         <!-- Seção de perfil e cabeçalho -->
         <LinearLayout
@@ -44,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:paddingEnd="16dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -102,6 +110,7 @@
                 android:textColor="#00A7E1"
                 android:textSize="24sp"
                 android:textStyle="bold"
+                android:paddingEnd="16dp"
                 app:drawableEndCompat="@drawable/ic_seta" />
 
         </LinearLayout>
@@ -132,8 +141,8 @@
                     android:padding="14dp">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:src="@drawable/ic_pix" />
 
                     <TextView
