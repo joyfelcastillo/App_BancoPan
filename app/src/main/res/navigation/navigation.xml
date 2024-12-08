@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/principalFragment">
+
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.jcastillo.panbankapp.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_pantallaDosFragment"
+            app:destination="@id/pantallaDosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaDosFragment"
+        android:name="com.jcastillo.panbankapp.PantallaDosFragment"
+        android:label="fragment_pantalla_dos"
+        tools:layout="@layout/fragment_pantalla_dos" >
+        <action
+            android:id="@+id/action_pantallaDosFragment_to_pantallaTresFragment"
+            app:destination="@id/pantallaTresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaTresFragment"
+        android:name="com.jcastillo.panbankapp.PantallaTresFragment"
+        android:label="fragment_pantalla_tres"
+        tools:layout="@layout/fragment_pantalla_tres" />
+</navigation>
