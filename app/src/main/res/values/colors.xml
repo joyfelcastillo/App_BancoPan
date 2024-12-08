@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="background">#F5F5F5</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="car_background">#F3F4F6</color>
+
+    <color name="azul_texto">#00A7E1</color>
+    <color name="gris_texto">#707070</color>
+
+
+    <color name="fdf">#009ee6</color>
 </resources>
