@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- TODO: style do Tela 1-->
     <!-- Estilo para ScrollView -->
     <style name="ScrollViewStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">20dp</item>
         <item name="background">@color/backgroundApp</item>
     </style>
 
@@ -64,7 +65,7 @@
             <item name="android:layout_height">wrap_content</item>
             <item name="android:layout_marginStart">8dp</item>
             <item name="android:text">@string/nome_de_usuário</item>
-            <item name="android:textColor">@color/black</item>
+            <item name="android:textColor">@color/black_bajo</item>
             <item name="android:layout_weight">1</item>
             <item name="android:textSize">20sp</item>
             <item name="android:textStyle">bold</item>
@@ -245,4 +246,223 @@
         </style>
 
 
-    </resources>
+    <!-- TODO: style do Tela 2-->
+        <!-- Estilo Principal LinearLayout -->
+        <style name="PersonalizadoLinearLayout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:padding">16dp</item>
+            <item name="android:orientation">vertical</item>
+        </style>
+
+        <style name="EquilíbrioImage">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">225dp</item>
+            <item name="android:layout_gravity">center</item>
+            <item name="android:layout_marginBottom">60dp</item>
+            <item name="android:src">@drawable/converted_image</item>
+        </style>
+
+        <style name="TituloText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingStart">16dp</item>
+            <item name="android:textColor">@color/black_bajo</item>
+            <item name="android:textSize">26sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="ValordosaldoText">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingStart">16dp</item>
+            <item name="android:layout_marginBottom">16dp</item>
+            <item name="android:textColor">@color/azul_texto</item>
+            <item name="android:text">@string/valor_reales</item>
+            <item name="android:textSize">26sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+
+        <style name="SubTituloText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingStart">16dp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:text">@string/subtitulo_text</item>
+            <item name="android:textColor">@color/gris_texto</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+        <!-- Estilo para el valor de fatura actual -->
+        <style name="InternoValueText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">16dp</item>
+            <item name="android:paddingStart">16dp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:text">@string/valor_interno</item>
+            <item name="android:textColor">@color/black_bajo</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+        <style name="NavigationBarImage">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">8dp</item>
+            <item name="android:paddingStart">16dp</item>
+            <item name="android:src">@drawable/ic_barra</item>
+        </style>
+
+        <!-- Estilo para el LinearLayout -->
+        <style name="ButtonGroupLayout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">20dp</item>
+            <item name="android:gravity">center</item>
+            <item name="android:orientation">horizontal</item>
+        </style>
+
+        <!-- Estilo para los botones sin selección -->
+        <style name="UnselectedButton">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:backgroundTint">@color/gray_light</item>
+            <item name="android:textColor">@color/gris_texto</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+        <!-- Estilo para el botón seleccionado -->
+        <style name="SelectedButton">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:text">@string/cartoes_button2</item>
+            <item name="android:backgroundTint">@color/boton_select</item>
+            <item name="android:textColor">@color/gray_light</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+
+
+    <!-- TODO: style do Tela 3-->
+        <!-- Estilo para el botón de retroceso -->
+        <style name="ButtonImage">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">20dp</item>
+            <item name="android:src">@drawable/ic_seta_iz</item>
+        </style>
+
+        <!-- Estilo  título -->
+        <style name="TituloTela3Text">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">20dp</item>
+            <item name="android:textColor">@color/black_bajo</item>
+            <item name="android:textSize">24sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:text">@string/cdb_liquidez_di_ria</item>
+        </style>
+
+        <!-- Estilo  subtítulo -->
+        <style name="SubtituloTela3Text">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">10dp</item>
+            <item name="android:textColor">@color/azul_texto</item>
+            <item name="android:textSize">22sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:text">@string/porcentaje_tela3</item>
+        </style>
+
+        <!-- Estilo para el texto de protección del FGC -->
+        <style name="ProtegidoText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">40dp</item>
+            <item name="android:textColor">@color/gris_texto</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:text">@string/fgc</item>
+        </style>
+
+        <!--Estilo para o LinearLayout principal (colunas) -->
+        <style name="VerticalLinhaLayout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">8dp</item>
+            <item name="android:orientation">vertical</item>
+        </style>
+
+        <!-- Estilo para los textos generales -->
+        <style name="GeneralText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">0dp</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:textColor">@color/gris_texto</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+        <!-- Estilo para el LinearLayout secundario (fila horizontal) -->
+        <style name="HorizontalLinhaLayout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">8dp</item>
+            <item name="android:orientation">horizontal</item>
+        </style>
+
+        <!-- Estilo para el texto mínimo -->
+        <style name="MinimoText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:textColor">@color/gris_texto</item>
+        </style>
+
+        <!-- Estilo para el valor en negrita -->
+        <style name="NumeroText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">@color/gris_texto</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+    <!-- Estilo para el TextView de la izquierda -->
+    <style name="IzquerdaTelaTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gris_texto</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo para el TextView de la derecha -->
+    <style name="DereitaTelaTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/gris_texto</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+        <!-- Estilo para el botón de inversión -->
+        <style name="InvestButton">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">60dp</item>
+            <item name="android:layout_gravity">center</item>
+            <item name="android:layout_marginTop">30dp</item>
+            <item name="android:background">@drawable/btn_3</item>
+            <item name="android:padding">12dp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:text">@string/boton_invertir</item>
+            <item name="android:textColor">@color/gray_light</item>
+        </style>
+
+
+
+</resources>

@@ -19,4 +19,40 @@
     <string name="card_emprestimos_text_3">R$ 12.000,00</string>
 
 
+    <!-- Segunda Tela -->
+    <string name="voc_ainda">Você ainda</string>
+    <string name="pode_gastar">pode gastar:</string>
+    <string name="valor_reales">R$1.245,00</string>
+    <string name="subtitulo_text">Sua fatura atual está em:</string>
+    <string name="valor_interno">R$ 755,00</string>
+    <string name="conta_button1">Conta</string>
+    <string name="cartoes_button2">Cartões</string>
+    <string name="emprestimo_button3">Empréstimo</string>
+
+
+    <!-- tercera Tela -->
+    <string name="cdb_liquidez_di_ria">CDB Liquidez diária</string>
+    <string name="porcentaje_tela3">130% do CDI</string>
+    <string name="fgc">Protegido pelo FGC</string>
+    <string name="tela3_texto1">Investimento</string>
+    <string name="mismo_tela3_text1">mínimo:</string>
+    <string name="numero_tex1">R$ 5,00</string>
+    <string name="tela3_text2">Investimento</string>
+    <string name="mismo_tela3_text2">máximo:</string>
+    <string name="nuemero_text2">R$ 10.000</string>
+    <string name="tela_text3">Prazo:</string>
+    <string name="numero_text3">90 dias</string>
+    <string name="tela3_text6">Regate:</string>
+    <string name="nuemero_text6">Diário</string>
+    <string name="tela3_text7">Emissor:</string>
+    <string name="numero_text7">Banco Pan</string>
+    <string name="tela_text8">Rendimento:</string>
+    <string name="numero_text">130% do CDI</string>
+    <string name="boton_invertir">Investir</string>
+    <string name="tela_text5">IOF:</string>
+    <string name="tela3_text4">IR:</string>
+    <string name="numero_text4">Regressivo</string>
+    <string name="numero_text5">Regressivo</string>
+
+
 </resources>

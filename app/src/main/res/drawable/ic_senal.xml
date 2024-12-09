@@ -11,7 +11,7 @@
       android:fillColor="@color/backgroundApp"/>
   <path
       android:pathData="m595,335h52l10,4 8,9 3,9v373l-4,9 -7,8 -9,4h-54l-10,-5 -7,-8 -3,-9v-372l4,-10 6,-7 7,-4z"
-      android:fillColor="#999A9A"/>
+      android:fillColor="@color/gray_light"/>
   <path
       android:pathData="m467,441h47l9,3 6,4 6,8 2,7v267l-4,9 -7,8 -9,4h-54l-10,-5 -7,-8 -3,-8v-267l3,-8 6,-8 6,-4z"
       android:fillColor="#4C4C4C"/>

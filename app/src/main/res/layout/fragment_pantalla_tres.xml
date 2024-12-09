@@ -1,311 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/backgroundApp"
-    android:padding="16dp">
+    style="@style/ScrollViewStyle">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/backgroundApp"
-        android:clipToPadding="false"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:padding="16dp">
+        style="@style/PersonalizadoLinearLayout">
 
         <ImageView
-            android:id="@+id/voltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_seta_iz" />
+            style="@style/ButtonImage" />
 
-        <!-- Title -->
         <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:layout_marginTop="20dp"
-            android:text="CDB Liquidez diária"
-            android:textColor="@color/gris_texto"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            style="@style/TituloTela3Text" />
 
-        <!-- Subtitle -->
         <TextView
-            android:id="@+id/subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="130% do CDI"
-            android:textColor="#00A7E1"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            style="@style/SubtituloTela3Text" />
 
-        <!-- FGC Protection -->
         <TextView
-            android:id="@+id/protection_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:text="Protegido pelo FGC   "
-            android:textColor="@color/gris_texto"
-            android:textSize="14sp"
-            app:drawableEndCompat="@drawable/ic_ajuda"
-            app:drawableTint="#00A7E1" />
+           style="@style/ProtegidoText"
+            android:drawableTint="@color/azul_texto"
+           app:drawableEndCompat="@drawable/ic_ajuda"/>
 
         <!-- Info Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
 
             <!-- Rows -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="vertical">
+                style="@style/VerticalLinhaLayout">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Investimento"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp" />
+                    style="@style/GeneralText"
+                    android:text="@string/tela3_texto1" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    style="@style/HorizontalLinhaLayout">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textColor="@color/gris_texto"
-                        android:text=" mínimo:" />
+                        style="@style/MinimoText"
+                        android:text="@string/mismo_tela3_text1" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="R$ 5,00"
-                        android:textColor="#333333"
-                        android:textSize="14sp" />
+                        style="@style/NumeroText"
+                        android:text="@string/numero_tex1" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="vertical">
+                style="@style/VerticalLinhaLayout">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Investimento"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp" />
-
+                    style="@style/GeneralText"
+                    android:text="@string/tela3_text2" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    style="@style/HorizontalLinhaLayout">
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="máximo:"
-                        android:textColor="@color/gris_texto"
-                        android:textSize="14sp" />
+                        style="@style/MinimoText"
+                        android:text="@string/mismo_tela3_text2" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="R$ 10.000"
-                        android:textColor="#333333"
-                        android:textSize="14sp" />
+                        style="@style/NumeroText"
+                        android:text="@string/nuemero_text2" />
                 </LinearLayout>
             </LinearLayout>
 
 
-            <!-- Add more rows similarly -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
+                style="@style/HorizontalLinhaLayout">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Prazo:"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp" />
+                    style="@style/MinimoText"
+                    android:text="@string/tela_text3" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="90 dias"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    style="@style/NumeroText"
+                    android:text="@string/numero_text3" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
+                style="@style/HorizontalLinhaLayout">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="IR:"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp"
+                    style="@style/IzquerdaTelaTextView"
+                    android:text="@string/tela3_text4"
                     app:drawableRightCompat="@drawable/ic_ajuda" />
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Regressivo"
-                    android:textAlignment="textEnd"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    style="@style/DereitaTelaTextView"
+                    android:text="@string/numero_text4" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
+                style="@style/HorizontalLinhaLayout">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="IOF:"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp"
+                    style="@style/IzquerdaTelaTextView"
+                    android:text="@string/tela_text5"
                     app:drawableRightCompat="@drawable/ic_ajuda" />
 
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Regressivo"
-                    android:textAlignment="textEnd"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    style="@style/DereitaTelaTextView"
+                    android:text="@string/numero_text5" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
+                style="@style/HorizontalLinhaLayout">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Regate:"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp" />
+                    style="@style/MinimoText"
+                    android:text="@string/tela3_text6" />
 
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Diário"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    style="@style/NumeroText"
+                    android:text="@string/nuemero_text6" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
+                style="@style/HorizontalLinhaLayout">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Emissor:"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp" />
+                    style="@style/MinimoText"
+                    android:text="@string/tela3_text7" />
 
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Banco Pan"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    style="@style/NumeroText"
+                    android:text="@string/numero_text7" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:paddingBottom="20dp"
-                android:orientation="horizontal">
+                style="@style/HorizontalLinhaLayout"
+                android:paddingBottom="20dp">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Rendimento:"
-                    android:textColor="@color/gris_texto"
-                    android:textSize="14sp" />
+                    style="@style/MinimoText"
+                    android:text="@string/tela_text8" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="130% do CDI"
-                    android:textStyle="bold"
-                    android:textColor="@color/azul_texto"
-                    android:textSize="14sp" />
+                    style="@style/NumeroText"
+                    android:text="@string/numero_text" />
             </LinearLayout>
 
         </LinearLayout>
 
-        <!-- Invest Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/invest_button"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/azul_texto"
-            android:background="@drawable/btn_3"
-            android:fontFamily="sans-serif-medium"
-            android:padding="12dp"
-            android:textStyle="bold"
-            android:text="Investir"
-            android:textColor="@color/gray_light" />
+            style="@style/InvestButton"
+            android:backgroundTint="@color/azul_select"/>
 
     </LinearLayout>
 </ScrollView>

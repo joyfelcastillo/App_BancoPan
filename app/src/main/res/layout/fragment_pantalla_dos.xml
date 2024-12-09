@@ -2,115 +2,58 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/backgroundApp"
-    android:padding="20dp">
+    style="@style/ScrollViewStyle">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        style="@style/PersonalizadoLinearLayout">
 
         <!-- Balance Information -->
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="225dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
+            style="@style/EquilíbrioImage"
             android:src="@drawable/converted_image" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:layout_marginTop="50dp"
-            android:text="Você ainda"
-            android:textColor="@color/gris_texto"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/TituloText"
+            android:paddingTop="60dp"
+            android:text="@string/voc_ainda"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="pode gastar:"
-            android:textColor="@color/gris_texto"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/TituloText"
+            android:text="@string/pode_gastar"
+            android:textColor="@color/black_bajo" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:layout_marginBottom="20dp"
-            android:text="R$ 1.245,00"
-            android:textColor="#00A7E1"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            style="@style/ValordosaldoText"
             app:drawableEndCompat="@drawable/ic_mais_olho" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-          android:paddingStart="16dp"
-            android:text="Sua fatura atual está em:"
-            android:textColor="#707070"
-            android:textSize="14sp" />
+            style="@style/SubTituloText" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:paddingStart="16dp"
-            android:text="R$ 755,00"
-            android:textStyle="bold"
-            android:textColor="@color/gris_texto"
-            android:textSize="18sp" />
+            style="@style/InternoValueText" />
 
         <!-- Navigation Tabs -->
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
+            style="@style/NavigationBarImage"
             android:src="@drawable/ic_barra" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            style="@style/ButtonGroupLayout">
 
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:text="Conta"
-                android:backgroundTint="#F3F4F6"
-                android:textColor="#707070"
-                android:textSize="16sp" />
+                style="@style/UnselectedButton"
+                android:layout_marginEnd="3dp"
+                android:text="@string/conta_button1"/>
 
             <Button
-                android:id="@+id/btnCartao"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/boton_select"
-                android:text="Cartões"
-                android:textColor="@color/gray_light"
-                android:textSize="16sp" />
+                style="@style/SelectedButton"
+                android:layout_marginEnd="3dp"
+                android:id="@+id/btnCartao" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Empréstimo"
-                android:backgroundTint="@color/car_background"
-                android:textColor="@color/gris_texto"
-                android:textSize="16sp" />
+                style="@style/UnselectedButton"
+                android:text="@string/emprestimo_button3" />
         </LinearLayout>
 
     </LinearLayout>

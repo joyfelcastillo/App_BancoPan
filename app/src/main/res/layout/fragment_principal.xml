@@ -229,7 +229,7 @@
                     <TextView
                         style="@style/CardYLinearTextViewStyle"
                         android:text="@string/card_emprestimos_text_1"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black_bajo" />
 
                     <TextView
                         style="@style/CardYLinearTextViewStyle"
@@ -240,7 +240,7 @@
                     <TextView
                         style="@style/CardYLinearTextViewStyle"
                         android:text="@string/card_emprestimos_text_3"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black_bajo" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
