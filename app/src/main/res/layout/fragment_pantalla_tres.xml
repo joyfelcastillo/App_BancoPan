@@ -299,10 +299,11 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#00A7E1"
+            android:backgroundTint="@color/azul_texto"
+            android:background="@drawable/btn_3"
             android:fontFamily="sans-serif-medium"
-
             android:padding="12dp"
+            android:textStyle="bold"
             android:text="Investir"
             android:textColor="@color/gray_light" />
 
