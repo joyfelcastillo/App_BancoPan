@@ -1,44 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- os 2 carView abaixo -->
-       <style name="BaseCardView">
+    <!-- Estilo para ScrollView -->
+    <style name="ScrollViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+
+    <!-- Estilo para LinearLayout principal -->
+
+    <style name="LinearLayoutVerticalStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
-        <item name="cardCornerRadius">10dp</item>
-        <item name="cardElevation">4dp</item>
-       </style>
-
-       <style name="LinealBaseCardView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
         <item name="android:orientation">vertical</item>
-        </style>
+    </style>
 
-    
-        <!-- Estilo para ScrollView -->
-        <style name="ScrollViewStyle">
+
+
+    <!-- Estilo para el LinearLayout de estado -->
+        <style name="StatusLayoutStyle">
             <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">match_parent</item>
-            <item name="android:background">@color/backgroundApp</item>
-            <item name="android:padding">20dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingBottom">8dp</item>
+            <item name="android:orientation">horizontal</item>
         </style>
 
-        <!-- Estilo para LinearLayout principal -->
-        <style name="LinearLayoutVerticalStyle">
+        <style name="StatusTextViewStyle">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:text">@string/hora</item>
+        </style>
+
+        <style name="StatusImageViewStyle">
+            <item name="android:layout_width">24dp</item>
+            <item name="android:layout_height">24dp</item>
+        </style>
+
+
+        <!-- Estilo para o cabeçalho LinearLayout  -->
+        <style name="CabecalhoLayoutStyle">
             <item name="android:layout_width">match_parent</item>
             <item name="android:layout_height">wrap_content</item>
             <item name="android:gravity">center</item>
-            <item name="android:padding">16dp</item>
+            <item name="android:paddingBottom">20dp</item>
+            <item name="android:orientation">horizontal</item>
+        </style>
+
+
+        <style name="CabecalhoImageViewStyle">
+            <item name="android:layout_width">40dp</item>
+            <item name="android:layout_height">40dp</item>
+        </style>
+
+
+        <style name="CabecalhoTextViewStyle">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginStart">8dp</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:textSize">20sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+
+        <style name="CabeclahoImageViewAdditionalStyle">
+            <item name="android:layout_width">40dp</item>
+            <item name="android:layout_height">40dp</item>
+            <item name="android:layout_marginStart">20dp</item>
+        </style>
+
+        <style name="CabecalhoUltimoImageViewStyle">
+            <item name="android:layout_width">24dp</item>
+            <item name="android:layout_height">24dp</item>
+            <item name="android:layout_marginStart">8dp</item>
+            <item name="android:layout_marginEnd">16dp</item>
+        </style>
+
+
+
+        <!-- Estilo para o LinearLayout do saldo atual -->
+        <style name="SaldoAtualLayoutStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingBottom">16dp</item>
             <item name="android:orientation">vertical</item>
         </style>
 
-        <!-- Estilo para LinearLayout horizontal -->
-        <style name="LinearLayoutHorizontalStyle">
+        <style name="SaldoAtualLabelStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingTop">16dp</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+
+        <style name="SaldoAtualTextViewStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">24sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:layout_marginEnd">16dp</item>
+        </style>
+
+
+
+        <!-- Estilo para as opções de ação GridLayout -->
+        <style name="ActionOptionsGridLayoutStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:columnCount">2</item>
+            <item name="android:rowCount">2</item>
+        </style>
+
+        <style name="ActionOptionCardViewStyle">
+            <item name="android:layout_columnWeight">1</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginEnd">8dp</item>
+            <item name="android:layout_marginBottom">8dp</item>
+            <item name="cardCornerRadius">10dp</item>
+        </style>
+
+
+        <style name="ActionOptionLinearLayoutStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:orientation">vertical</item>
+            <item name="android:padding">14dp</item>
+        </style>
+
+
+        <style name="ActionOptionImageViewStyle">
+            <item name="android:layout_width">30dp</item>
+            <item name="android:layout_height">30dp</item>
+        </style>
+
+
+        <style name="ActionOptionTextViewStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+
+        <!-- Estilo para o CardView de informações adicionais -->
+        <style name="SaudeInfoCardViewStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginTop">20dp</item>
+            <item name="cardCornerRadius">10dp</item>
+
+        </style>
+
+        <!-- Estilo para el LinearLayout dentro de la CardView -->
+        <style name="SaudeInfoLinearLayoutStyle">
             <item name="android:layout_width">match_parent</item>
             <item name="android:layout_height">wrap_content</item>
             <item name="android:orientation">horizontal</item>
         </style>
+
+        <!-- Estilo para los LinearLayouts dentro de la CardView -->
+        <style name="SaudeInfoInternoLinearLayoutStyle">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_margin">16dp</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:orientation">vertical</item>
+        </style>
+
+        <!-- Estilo para los TextViews dentro del LinearLayout -->
+        <style name="SaudeInfoTextViewStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>m>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:layout_marginStart">16dp</item>
+        </style>
+
+    <!-- Estilo para ImageView dentro del LinearLayout -->
+    <style name="SaudeInfoImageViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+            <!--Estilo para LinearLayout de Cartões e Empréstimos -->
+        <style name="CardAndLoansLinearLayoutStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:orientation">horizontal</item>
+            <item name="android:weightSum">2</item>
+        </style>
+
+
+        <style name="CardYLinearCardViewStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="cardCornerRadius">10dp</item>
+            <item name="android:layout_marginEnd">8dp</item>
+        </style>
+
+
+        <style name="CardYLienearInternoLinearLayoutStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:orientation">vertical</item>
+            <item name="android:layout_margin">14dp</item>
+        </style>
+
+
+        <style name="CardYLinearTextViewStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+
     </resources>

@@ -10,6 +10,7 @@
     <color name="boton_select">#5C5C5C</color>
     <color name="backgroundApp">#F5F5F5</color>
     <color name="car_background">#F3F4F6</color>
+    <color name="saude_background">#5E626B</color>
 
 
 </resources>
