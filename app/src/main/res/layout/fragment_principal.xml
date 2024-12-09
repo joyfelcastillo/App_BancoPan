@@ -19,27 +19,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
                 android:text="11:39" />
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_senal"/>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_wifi"/>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_bateria"/>
 
         </LinearLayout>
@@ -49,8 +51,8 @@
             android:id="@+id/cabeçalho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -60,7 +62,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:text="Bruna"
@@ -130,8 +132,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="#F3F4F6"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -161,8 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 app:cardBackgroundColor="#F3F4F6"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -192,11 +192,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_marginTop="8dp"
+                android:paddingTop="8dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="#F3F4F6"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -226,10 +225,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_marginTop="8dp"
-                app:cardBackgroundColor="#00A7E1"
-                app:cardCornerRadius="10dp"
-                app:cardMaxElevation="4dp">
+                android:paddingTop="8dp"
+                app:cardBackgroundColor="@color/azul_select"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -258,7 +256,7 @@
             android:id="@+id/cardSaude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             app:cardBackgroundColor="#5E626B"
             app:cardCornerRadius="10dp"
             app:cardElevation="4dp">
@@ -320,8 +318,8 @@
             android:paddingBottom="16dp">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/ic_remove" />
 
             <ImageView
@@ -343,7 +341,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#00A7E1"
+                app:cardBackgroundColor="@color/azul_select"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="4dp">
 

@@ -7,7 +7,5 @@
 
     </style>
 
-
-
     <style name="Theme.PanBankApp" parent="Base.Theme.PanBankApp" />
 </resources>

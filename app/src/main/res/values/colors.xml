@@ -3,24 +3,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
-    <color name="backgroundApp">#F5F5F5</color>
-    <color name="gray_light">#E0E0E0</color>
-    <color name="car_background">#F3F4F6</color>
-
-    <color name="azul_texto">#00A7E1</color>
     <color name="gris_texto">#707070</color>
-
-
-    <color name="fdf">#009ee6</color>
-
-
-
-
-        <color name="colorPrimary">#00A0E3</color>
-
-        <color name="textColor">#5C5C5C</color>
-
+    <color name="gray_light">#E0E0E0</color>
+    <color name="azul_texto">#00A7E1</color>
+    <color name="azul_select">#00A0E3</color>
+    <color name="boton_select">#5C5C5C</color>
+    <color name="backgroundApp">#F5F5F5</color>
+    <color name="car_background">#F3F4F6</color>
 
 
 </resources>
