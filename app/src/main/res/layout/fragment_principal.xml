@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/ScrollViewStyle"
-    android:background="@color/backgroundApp"
     tools:context=".MainActivity">
 
 
@@ -39,9 +38,7 @@
                 android:src="@drawable/image_converted" />
 
             <TextView
-                style="@style/CabecalhoTextViewStyle"
-                android:textColor="@color/black"
-                android:text="@string/nome_de_usuário" />
+                style="@style/CabecalhoTextViewStyle"/>
 
             <ImageView
                 style="@style/CabeclahoImageViewAdditionalStyle"
@@ -57,14 +54,10 @@
             style="@style/SaldoAtualLayoutStyle">
 
             <TextView
-               style="@style/SaldoAtualLabelStyle"
-                android:textColor="@color/gris_texto"
-                android:text="@string/nome_saldo" />
+               style="@style/SaldoAtualLabelStyle" />
 
             <TextView
                 style="@style/SaldoAtualTextViewStyle"
-                android:text="@string/reales"
-                android:textColor="@color/azul_select"
                 app:drawableEndCompat="@drawable/ic_seta" />
 
         </LinearLayout>
@@ -74,8 +67,9 @@
             style="@style/ActionOptionsGridLayoutStyle">
 
             <androidx.cardview.widget.CardView
-                style="@style/ActionOptionCardViewStyle"
-                app:cardBackgroundColor="@color/car_background">
+                app:cardBackgroundColor="@color/car_background"
+                android:layout_marginEnd="8dp"
+                style="@style/ActionOptionCardViewStyle">
 
                 <LinearLayout
                     style="@style/ActionOptionLinearLayoutStyle">
@@ -106,12 +100,12 @@
                         style="@style/ActionOptionTextViewStyle"
                         android:textColor="@color/gris_texto"
                         android:text="@string/card_pagamentos"/>
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 style="@style/ActionOptionCardViewStyle"
+                android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="@color/car_background">
 
                 <LinearLayout
@@ -125,7 +119,6 @@
                         style="@style/ActionOptionTextViewStyle"
                         android:textColor="@color/gris_texto"
                         android:text="@string/card_shopping" />
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -146,6 +139,7 @@
                         android:textColor="@color/gray_light" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
         </GridLayout>
 
         <!-- Información adicional -->
@@ -182,22 +176,14 @@
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
-            android:id="@+id/pontos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingBottom="16dp">
+            style="@style/PontosLayout">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                style="@style/PontosImageView"
                 android:src="@drawable/ic_remove" />
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                style="@style/PontosImageView"
                 android:src="@drawable/ic_pontos" />
         </LinearLayout>
 
@@ -207,6 +193,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardCartao"
+                android:layout_marginEnd="8dp"
                 style="@style/CardYLinearCardViewStyle"
                 app:cardBackgroundColor="@color/azul_select">
 
@@ -256,7 +243,7 @@
                         android:textColor="@color/black" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
         </LinearLayout>
+    </LinearLayout>
 </ScrollView>
