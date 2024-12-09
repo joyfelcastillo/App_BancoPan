@@ -22,10 +22,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="11:49"/>
+                android:text="11:39" />
 
             <ImageView
                 android:layout_width="30dp"
@@ -42,7 +42,6 @@
                 android:layout_height="30dp"
                 android:src="@drawable/ic_bateria"/>
 
-
         </LinearLayout>
 
         <!-- Seção de perfil e cabeçalho -->
@@ -51,25 +50,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:paddingEnd="16dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="8dp"
                 android:src="@drawable/image_converted" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:textStyle="bold"
-                android:text="@string/nome_de_usuário"
-                android:textColor="#707070"
-                android:textSize="20sp" />
+                android:text="Bruna"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="40dp"
@@ -81,7 +78,9 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="8dp"
-                android:src="@drawable/ic_ajuda" />
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_ajuda"
+                />
         </LinearLayout>
 
         <!-- Saldo Actual -->
@@ -96,9 +95,9 @@
                 android:id="@+id/current_balance_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="16dp"
+                android:paddingTop="20dp"
                 android:text="Saldo atual"
-                android:textColor="#707070"
+                android:textColor="@color/gris_texto"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -110,7 +109,7 @@
                 android:textColor="#00A7E1"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:paddingEnd="16dp"
+                android:layout_marginEnd="16dp"
                 app:drawableEndCompat="@drawable/ic_seta" />
 
         </LinearLayout>
@@ -149,13 +148,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#707070"
+                        android:textColor="@color/gris_texto"
                         android:textSize="16sp"
                         android:text="Pix"
                         android:textStyle="bold" />
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -181,7 +178,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#707070"
+                        android:textColor="@color/gris_texto"
                         android:textSize="16sp"
                         android:text="Pagamentos"
                         android:textStyle="bold" />
@@ -215,7 +212,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#707070"
+                        android:textColor="@color/gris_texto"
                         android:textSize="16sp"
                         android:text="Shopping PAN "
                         android:textStyle="bold" />
@@ -248,17 +245,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="    Eprestimos    "
+                        android:text="Eprestimos    "
                         android:textSize="16sp"
                         android:textColor="@color/gray_light"
                         android:textStyle="bold" />
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
-
         <!-- Información adicional -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSaude"
@@ -307,14 +301,12 @@
                         android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
-
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/sau" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -337,6 +329,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/ic_pontos" />
         </LinearLayout>
+
         <!-- Tarjetas y préstamos -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -358,7 +351,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center"
                     android:layout_margin="16dp">
 
                     <TextView
@@ -381,7 +373,6 @@
                         android:layout_height="wrap_content"
                         android:text="cartão agora"
                         android:textColor="@color/gray_light" />
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -398,14 +389,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center"
                     android:layout_margin="16dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Empréstimos"
-                        android:textColor="#707070"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -415,19 +405,17 @@
                         android:layout_marginTop="20dp"
                         android:textStyle="bold"
                         android:text="Pague ate:"
-                        android:textColor="#707070" />
+                        android:textColor="@color/gris_texto" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="R$ 12.000,00"
-                        android:textColor="#707070"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
 
-    </LinearLayout>
+        </LinearLayout>
 </ScrollView>
