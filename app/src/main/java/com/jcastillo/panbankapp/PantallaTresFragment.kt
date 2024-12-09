@@ -19,7 +19,7 @@ class PantallaTresFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_pantalla_tres, container, false)
         val bi = view.findViewById<Button>(R.id.invest_button)
         bi.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_principalFragment_to_pantallaDosFragment)
+            Navigation.findNavController(view).navigate(R.id.principalFragment)
         }
         return view
     }
