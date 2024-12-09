@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:text="11:39" />
+                android:text="@string/hora" />
 
             <ImageView
                 android:layout_width="24dp"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:text="Bruna"
+                android:text="@string/nome_de_usuário"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
-                android:text="Saldo atual"
+                android:text="@string/nome_saldo"
                 android:textColor="@color/gris_texto"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -107,7 +107,7 @@
                 android:id="@+id/saldoAtual"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="R$ 1.400,00"
+                android:text="@string/reales"
                 android:textColor="#00A7E1"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -131,7 +131,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                app:cardBackgroundColor="#F3F4F6"
+                app:cardBackgroundColor="@color/car_background"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -144,14 +144,14 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/_pxw4mybsqknw49q3kstyalwaix" />
+                        android:src="@drawable/ic_pix" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/gris_texto"
                         android:textSize="16sp"
-                        android:text="Pix"
+                        android:text="@string/card_pix"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -161,7 +161,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                app:cardBackgroundColor="#F3F4F6"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/car_background"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -180,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/gris_texto"
                         android:textSize="16sp"
-                        android:text="Pagamentos"
+                        android:text="@string/card_pagamentos"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -194,7 +195,7 @@
                 android:layout_columnWeight="1"
                 android:paddingTop="8dp"
                 android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="#F3F4F6"
+                app:cardBackgroundColor="@color/car_background"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -213,7 +214,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/gris_texto"
                         android:textSize="16sp"
-                        android:text="Shopping PAN "
+                        android:text="@string/card_shopping"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -243,7 +244,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Eprestimos    "
+                        android:text="@string/card_emprestimos"
                         android:textSize="16sp"
                         android:textColor="@color/gray_light"
                         android:textStyle="bold" />
@@ -277,7 +278,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="Saúde de qualidade "
+                        android:text="@string/card_saude_text_1"
                         android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -286,7 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="pagando apenas R$ "
+                        android:text="@string/card_saude_text_2"
                         android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -295,7 +296,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="8,99 por mês."
+                        android:text="@string/card_saude_text_3"
                         android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -323,8 +324,8 @@
                 android:src="@drawable/ic_remove" />
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/ic_pontos" />
         </LinearLayout>
 
@@ -336,25 +337,18 @@
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
+                style="@style/BaseCardView"
                 android:id="@+id/cardCartao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                app:cardBackgroundColor="@color/azul_select"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardBackgroundColor="@color/azul_select">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_margin="16dp">
+                    style="@style/LinealBaseCardView">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cartão"
+                        android:text="@string/card_cartao_text_1"
                         android:textColor="@color/gray_light"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -363,36 +357,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Peça um"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="@string/card_cartao_text_2"
                         android:textColor="@color/gray_light" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="cartão agora"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="@string/card_cartao_text_3"
                         android:textColor="@color/gray_light" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                style="@style/BaseCardView"
                 android:id="@+id/gridEm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:cardBackgroundColor="#F3F4F6"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardBackgroundColor="@color/car_background">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_margin="16dp">
+                    style="@style/LinealBaseCardView">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Empréstimos"
+                        android:text="@string/card_emprestimos_text_1"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -401,14 +392,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:text="Pague ate:"
+                        android:text="@string/card_emprestimos_text_2"
                         android:textColor="@color/gris_texto" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="R$ 12.000,00"
+                        android:textSize="16sp"
+                        android:text="@string/card_emprestimos_text_3"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>

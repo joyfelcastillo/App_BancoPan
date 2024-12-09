@@ -1,5 +1,22 @@
 <resources>
     <string name="app_name">Pan Bank App</string>
+    <string name="hora">11:39</string>
+    <string name="nome_de_usuário">Bruna</string>
+    <string name="nome_saldo">Saldo atual</string>
+    <string name="reales">R$ 1.400,00</string>
+    <string name="card_pix">Pix</string>
+    <string name="card_pagamentos">Pagamentos</string>
+    <string name="card_shopping">Shopping PAN</string>
+    <string name="card_emprestimos">Eprestimos</string>
+    <string name="card_saude_text_1">Saúde de qualidade</string>
+    <string name="card_saude_text_2">pagando apenas R$</string>
+    <string name="card_saude_text_3">8,99 por mês.</string>
+    <string name="card_cartao_text_1">Cartão</string>
+    <string name="card_cartao_text_2">Peça um</string>
+    <string name="card_cartao_text_3">cartão agora</string>
+    <string name="card_emprestimos_text_1">Empréstimos</string>
+    <string name="card_emprestimos_text_2">Pague ate:</string>
+    <string name="card_emprestimos_text_3">R$ 12.000,00</string>
 
 
 </resources>
